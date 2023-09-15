@@ -22,3 +22,18 @@ summary::after {
 details[open] > summary::after {
   transform: rotate(-180deg);
 } */
+
+/* * {
+  padding: 0;
+  margin: 0;
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+} */
+
+
+.rotate-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease; /* Adjust the transition duration as needed */
+  }
