@@ -12,8 +12,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="/images/Accordion.png"/>
-<img src="/images/Accordion2.png">
+<img src="/public/images/Accordion.png"/>
+<img src="/public/images/Accordion2.png">
 
 ### Built with
 
