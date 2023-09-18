@@ -15,6 +15,7 @@ export default {
       fontFamily: {
         primary: ["Kumbh Sans"],
       },
+      
     },
   },
   plugins: [],

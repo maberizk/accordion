@@ -1,228 +1,48 @@
-// import { useState } from "react";
-// import "./App.css";
-
-// function App() {
-//   const [count, setCount] = useState(0);
-
-//   return (
-//     <body className="text-soft-violet font-primary">
-//       <div>
-//         <img
-//           src="/images/illustration-woman-online-mobile.svg"
-//           className="w-300"
-//         />
-//       </div>
-//       <div className="px-6 flex flex-col items-center">
-//         <h1 className="text-center">FAQ</h1>
-//         <div className="flex flex-col items-left">
-//           <details>
-//             <summary> How many team members can I invite?</summary>
-//             <p>
-//               You can invite up to 2 additional users on the Free plan. There is
-//               no limit on team members for the Premium plan.
-//             </p>
-//           </details>
-//           <details>
-//             <summary>What is the maximum file upload size?</summary>
-//             <p>
-//               No more than 2GB. All files in your account must fit your allotted
-//               storage space.
-//             </p>
-//           </details>
-//           <details>
-//             <summary>How do I reset my password?</summary>
-//             <p>
-//               Click “Forgot password” from the login page or “Change password”
-//               from your profile page. A reset link will be emailed to you.
-//             </p>
-//           </details>
-//           <details>
-//             <summary>Can I cancel my subscription?</summary>
-//             <p>
-//               Yes! Send us a message and we'll process your request no questions
-//               asked.
-//             </p>
-//           </details>
-//           <details>
-//             <summary>Do you provide additional support?</summary>
-//             <p>
-//               Chat and email support is available 24/7. Phone lines are open
-//               during normal business hours.
-//             </p>
-//           </details>
-//         </div>
-//       </div>
-//     </body>
-//   );
-// }
-
-// export default App;
-
-// import { useState } from "react";
-// import "./App.css";
-
-// function App() {
-//   const [isOpen, setIsOpen] = useState(true); // Initialize the state
-
-//   // Function to toggle the state when the input is clicked
-//   const toggleAccordion = () => {
-//     setIsOpen(!isOpen);
-//   };
-
-//   return (
-//     <div className="text-dark-blue font-primary bg-soft-violet ">
-//       <img
-//         src="/images/illustration-woman-online-mobile.svg"
-//         className="w-300"
-//       />
-//       <h1 className="text-center">FAQ</h1>
-
-//       <ul className="my-18 mx-auto w-1/2 accordion">
-//         <li className="mb-2.5 p-2.5 border-b border-black-500 bg-white">
-//           <label
-//             htmlFor="first"
-//             className="p-2.5 flex align-center justify-between text-lg cursor-pointer "
-//           >
-//             How many team members can I invite?{" "}
-//             <span className="rotate-90 text-2xl text-soft-red">&#x3e;</span>
-//           </label>
-//           <input
-//             className="hidden"
-//             type="radio"
-//             name="accordion"
-//             id="first"
-//             checked={isOpen}
-//           ></input>
-//           <div
-//             className={`content py-0 px-2.5 leading-6 truncate duration-500 ${
-//               isOpen ? "max-h-400" : "max-h-0"
-//             }`}
-//           >
-//             <p>
-//               You can invite up to 2 additional users on the Free plan. There is
-//               no limit on team members for the Premium plan.
-//             </p>
-//           </div>
-//         </li>
-//         <li className="mb-2.5 p-2.5 border-b border-black-500 bg-white">
-//           <label
-//             htmlFor="second"
-//             className="p-2.5 flex align-center justify-between text-lg cursor-pointer "
-//           >
-//             What is the maximum file upload size?{" "}
-//             <span className="rotate-90 text-2xl text-soft-red">&#x3e;</span>
-//           </label>
-//           <input
-//             className="hidden"
-//             type="radio"
-//             name="accordion"
-//             id="second"
-
-//           ></input>
-//           <div
-//             className={`content py-0 px-2.5 leading-6 truncate duration-500 ${
-//               isOpen ? "max-h-400" : "max-h-0"
-//             }`}
-//           >
-//             <p>
-//               No more than 2GB. All files in your account must fit your allotted
-//               storage space.
-//             </p>
-//           </div>
-//         </li>
-//         <li className="mb-2.5 p-2.5 border-b border-black-500 bg-white">
-//           <label
-//             htmlFor="third"
-//             className="p-2.5 flex align-center justify-between text-lg cursor-pointer "
-//           >
-//             How do I reset my password?{" "}
-//             <span className="rotate-90 text-2xl text-soft-red">&#x3e;</span>
-//           </label>
-//           <input
-//             className="hidden"
-//             type="radio"
-//             name="accordion"
-//             id="third"
-//           ></input>
-//           <div className="content">
-//             <p>
-//               Click “Forgot password” from the login page or “Change password”
-//               from your profile page. A reset link will be emailed to you.
-//             </p>
-//           </div>
-//         </li>
-//         <li className="mb-2.5 p-2.5 border-b border-black-500 bg-white">
-//           <label
-//             htmlFor="forth"
-//             className="p-2.5 flex align-center justify-between text-lg cursor-pointer "
-//           >
-//             Can I cancel my subscription?{" "}
-//             <span className="rotate-90 text-2xl text-soft-red">&#x3e;</span>
-//           </label>
-//           <input
-//             className="hidden"
-//             type="radio"
-//             name="accordion"
-//             id="forth"
-//           ></input>
-//           <div className="content">
-//             <p>
-//               Yes! Send us a message and we'll process your request no questions
-//               asked.
-//             </p>
-//           </div>
-//         </li>
-//         <li className="mb-2.5 p-2.5 border-b border-black-500 bg-white">
-//           <label
-//             htmlFor="fifth"
-//             className="p-2.5 flex align-center justify-between text-lg cursor-pointer "
-//           >
-//             Do you provide additional support?{" "}
-//             <span className="rotate-90 text-2xl text-soft-red">&#x3e;</span>
-//           </label>
-//           <input
-//             className="hidden"
-//             type="radio"
-//             name="accordion"
-//             id="fifth"
-//           ></input>
-//           <div className="content">
-//             <p>
-//               Chat and email support is available 24/7. Phone lines are open
-//               during normal business hours.
-//             </p>
-//           </div>
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import { useState } from "react";
 import "./App.css";
 
-// const items = document.querySelectorAll(".accordion-item");
-
-// items.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     const toggle = item.querySelector(".toggle");
-
-//     toggle.classList.toggle(".hidden");
-//   });
-// });
-
 function App() {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
+
+  const [isAccordionOpen2, setIsAccordionOpen2] = useState(false);
+
+  const [isAccordionOpen3, setIsAccordionOpen3] = useState(false);
+
+  const [isAccordionOpen4, setIsAccordionOpen4] = useState(false);
+
+  const [isAccordionOpen5, setIsAccordionOpen5] = useState(false);
 
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
   };
 
+  const toggleAccordion2 = () => {
+    setIsAccordionOpen2(!isAccordionOpen2);
+  };
+
+  const toggleAccordion3 = () => {
+    setIsAccordionOpen3(!isAccordionOpen3);
+  };
+
+  const toggleAccordion4 = () => {
+    setIsAccordionOpen4(!isAccordionOpen4);
+  };
+
+  const toggleAccordion5 = () => {
+    setIsAccordionOpen5(!isAccordionOpen5);
+  };
+
   return (
-    <div className="bg-soft-violet flex justify-center items-center min-h-screen">
-      <div className="bg-white text-dark-blue p-4  shadow-lg rounded-xl w-11/12 max-w-full ">
+    <div className="bg-gradient-to-b from-soft-violet to-soft-blue flex flex-col justify-center items-center min-h-screen">
+      <img
+        src="/images/illustration-woman-online-mobile.svg"
+        className="w-52 absolute top-4 z-10 "
+      />
+      <img
+        src="/images/bg-pattern-mobile.svg"
+        className="w-52 absolute top-28 z-10 sharpShadow"
+      />
+      <div className="bg-white text-dark-blue p-4 pt-24 pb-10 shadow-lg rounded-xl w-11/12 max-w-full drop-shadow-2xl flex flex-col">
         <h1 className="text-3xl font-bold text-center py-6">FAQ</h1>
         <div
           className="accordion-item cursor-pointer border-b border-light-gray-blue"
@@ -251,6 +71,122 @@ function App() {
           >
             You can invite up to 2 additional users on the Free plan. There is
             no limit on team members for the Premium plan.
+          </div>
+        </div>
+        <div
+          className="accordion-item cursor-pointer border-b border-light-gray-blue"
+          onClick={toggleAccordion2}
+        >
+          <div className=" flex justify-between text-sm pb-2 py-4  hover:text-soft-red ">
+            <span
+              className={`bold-text ${
+                isAccordionOpen2 ? "font-bold text-very-dark-blue" : ""
+              }`}
+            >
+              What is the maximum file upload size?
+            </span>
+            <span
+              className={`chevron material-symbols-outlined  text-soft-red ${
+                isAccordionOpen2 ? "rotate-180 " : ""
+              }`}
+            >
+              expand_more
+            </span>
+          </div>
+          <div
+            className={`pb-4 text-sm font-light w-11/12 text-dark-grayish-blue  ${
+              isAccordionOpen2 ? "" : "hidden"
+            }`}
+          >
+            No more than 2GB. All files on your account must fit your allotted
+            storage space.
+          </div>
+        </div>
+        <div
+          className="accordion-item cursor-pointer border-b border-light-gray-blue"
+          onClick={toggleAccordion3}
+        >
+          <div className=" flex justify-between text-sm pb-2 py-4  hover:text-soft-red ">
+            <span
+              className={`bold-text ${
+                isAccordionOpen3 ? "font-bold text-very-dark-blue" : ""
+              }`}
+            >
+              How do I reset my password?
+            </span>
+            <span
+              className={`chevron material-symbols-outlined  text-soft-red ${
+                isAccordionOpen3 ? "rotate-180 " : ""
+              }`}
+            >
+              expand_more
+            </span>
+          </div>
+          <div
+            className={`pb-4 text-sm font-light w-11/12 text-dark-grayish-blue  ${
+              isAccordionOpen3 ? "" : "hidden"
+            }`}
+          >
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page.
+          </div>
+        </div>
+        <div
+          className="accordion-item cursor-pointer border-b border-light-gray-blue"
+          onClick={toggleAccordion4}
+        >
+          <div className=" flex justify-between text-sm pb-2 py-4  hover:text-soft-red ">
+            <span
+              className={`bold-text ${
+                isAccordionOpen4 ? "font-bold text-very-dark-blue" : ""
+              }`}
+            >
+              Can I cancel my subscription?
+            </span>
+            <span
+              className={`chevron material-symbols-outlined  text-soft-red ${
+                isAccordionOpen4 ? "rotate-180 " : ""
+              }`}
+            >
+              expand_more
+            </span>
+          </div>
+          <div
+            className={`pb-4 text-sm font-light w-11/12 text-dark-grayish-blue  ${
+              isAccordionOpen4 ? "" : "hidden"
+            }`}
+          >
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </div>
+        </div>
+        <div
+          className="accordion-item cursor-pointer border-b border-light-gray-blue"
+          onClick={toggleAccordion5}
+        >
+          <div className=" flex justify-between text-sm pb-2 py-4  hover:text-soft-red ">
+            <span
+              className={`bold-text ${
+                isAccordionOpen5 ? "font-bold text-very-dark-blue" : ""
+              }`}
+            >
+              Do you provide additional support?
+            </span>
+            <span
+              className={`chevron material-symbols-outlined  text-soft-red ${
+                isAccordionOpen5 ? "rotate-180 " : ""
+              }`}
+            >
+              expand_more
+            </span>
+          </div>
+          <div
+            className={`pb-4 text-sm font-light w-11/12 text-dark-grayish-blue  ${
+              isAccordionOpen5 ? "" : "hidden"
+            }`}
+          >
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
           </div>
         </div>
       </div>
