@@ -2,8 +2,6 @@
 
 This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Overview
-
 ### The challenge
 
 Users should be able to:
@@ -15,13 +13,7 @@ Users should be able to:
 ### Screenshot
 
 <img src="/images/Accordion.png"/>
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+<img src="/images/Accordion2.png">
 
 ### Built with
 
