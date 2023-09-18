@@ -222,23 +222,27 @@ function App() {
 
   return (
     <div className="bg-soft-violet flex justify-center items-center min-h-screen">
-      <div className="bg-white text-dark-blue p-8 shadow-lg rounded-xl w-[600px] max-w-full ">
-        <h1 className="text-3xl font-bold text-center">FAQ</h1>
-        <p className="text-center my-4 max-w-md mx-auto ">
-          nfnfifidnfnsdoosdfosd
-        </p>
-
+      <div className="bg-white text-dark-blue p-4  shadow-lg rounded-xl w-11/12 max-w-full ">
+        <h1 className="text-3xl font-bold text-center py-4">FAQ</h1>
         <div
           className="accordion-item cursor-pointer"
           onClick={toggleAccordion}
         >
-          <div className=" flex justify-between p-2 text-xl ">
-            How many team members can I invite?
+          <div className=" flex justify-between text-sm hover:text-soft-red ">
+            <span
+              className={`bold-text ${
+                isAccordionOpen ? "font-bold text-very-dark-blue" : ""
+              }`}
+            >
+              How many team members can I invite?
+            </span>
             <svg
-              className={`chevron ${isAccordionOpen ? "rotate-down" : ""}`}
+              className={`chevron text-soft-red ${
+                isAccordionOpen ? "rotate-down" : ""
+              }`}
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="18"
+              height="18"
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
@@ -250,7 +254,11 @@ function App() {
               <path d="M4 13l8 -3l8 3"></path>
             </svg>
           </div>
-          <div className={`p-2 ${isAccordionOpen ? "" : "hidden"}`}>
+          <div
+            className={`py-2 text-sm font-light text-dark-grayish-blue  ${
+              isAccordionOpen ? "" : "hidden"
+            }`}
+          >
             You can invite up to 2 additional users on the Free plan. There is
             no limit on team members for the Premium plan.
           </div>
