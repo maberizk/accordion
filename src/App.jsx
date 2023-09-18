@@ -41,11 +41,13 @@ function App() {
         />
         <img
           src="/images/bg-pattern-mobile.svg"
-          className="w-52 absolute top-28 md:w-96 md:top-52" 
+          className="w-52 absolute top-28 md:w-96 md:top-52"
         />
       </div>
       <div className="bg-white text-dark-blue p-4 pt-24 pb-10 shadow-lg rounded-xl w-11/12 max-w-full drop-shadow-2xl flex flex-col md:pl-96 md:pr-24 md:w-3/4">
-        <h1 className="text-3xl font-bold text-center py-6 md:text-left md:pt-0">FAQ</h1>
+        <h1 className="text-3xl font-bold text-center py-6 md:text-left md:pt-0">
+          FAQ
+        </h1>
         <div
           className="accordion-item cursor-pointer border-b border-light-gray-blue"
           onClick={toggleAccordion}
