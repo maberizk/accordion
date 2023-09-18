@@ -223,39 +223,29 @@ function App() {
   return (
     <div className="bg-soft-violet flex justify-center items-center min-h-screen">
       <div className="bg-white text-dark-blue p-4  shadow-lg rounded-xl w-11/12 max-w-full ">
-        <h1 className="text-3xl font-bold text-center py-4">FAQ</h1>
+        <h1 className="text-3xl font-bold text-center py-6">FAQ</h1>
         <div
-          className="accordion-item cursor-pointer"
+          className="accordion-item cursor-pointer border-b border-light-gray-blue"
           onClick={toggleAccordion}
         >
-          <div className=" flex justify-between text-sm hover:text-soft-red ">
+          <div className=" flex justify-between text-sm pb-2 hover:text-soft-red ">
             <span
-              className={`bold-text ${
+              className={`bold-text  ${
                 isAccordionOpen ? "font-bold text-very-dark-blue" : ""
               }`}
             >
               How many team members can I invite?
             </span>
-            <svg
-              className={`chevron text-soft-red ${
-                isAccordionOpen ? "rotate-down" : ""
+            <span
+              className={`chevron material-symbols-outlined  text-soft-red ${
+                isAccordionOpen ? "rotate-180 " : ""
               }`}
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M4 13l8 -3l8 3"></path>
-            </svg>
+              expand_more
+            </span>
           </div>
           <div
-            className={`py-2 text-sm font-light text-dark-grayish-blue  ${
+            className={`pb-4 text-sm font-light w-11/12 text-dark-grayish-blue  ${
               isAccordionOpen ? "" : "hidden"
             }`}
           >

@@ -13,7 +13,7 @@ export default {
         "light-gray-blue": "hsl(240, 5%, 91%)",
       },
       fontFamily: {
-        primary: ["Kumbh Sans", "sans-serif"],
+        primary: ["Kumbh Sans"],
       },
     },
   },

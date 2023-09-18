@@ -1,3 +1,6 @@
+* {
+  font-family: "Kumbh Sans", sans-serif;
+}
 
 .rotate-down {
   transform: rotate(180deg);
